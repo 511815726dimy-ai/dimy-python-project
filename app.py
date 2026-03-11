@@ -1403,38 +1403,14 @@ def main_page():
                 with ui.column().classes('w-1/2'):
                     ui.label('📑 法律经济处理明细表').classes('text-base font-bold')
 
-                    upload_html_legal = '''
-                    <div style="padding: 20px; border: 2px dashed #3F51B5; border-radius: 8px; background-color: #e8eaf6;">
-                        <input type="file" id="legalDetailFile" accept=".xlsx,.xls" style="display: none;">
-                        <button id="legalDetailChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
-                            📁 选择文件
-                        </button>
-                        <button id="legalDetailUploadBtn" style="width: 100%; padding: 12px; background-color: #3F51B5; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
-                            📤 上传法律明细
-                        </button>
-                        <div id="legalDetailFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #3F51B5;"></div>
-                        <div id="legalDetailStatus" style="margin-top: 10px; text-align: center; color: #666;"></div>
-                    </div>
-                    '''
+                    upload_html_legal = '''<div style="padding: 20px; border: 2px dashed #3F51B5; border-radius: 8px; background-color: #e8eaf6;"><input type="file" id="legalDetailFile" accept=".xlsx,.xls" style="display: none;"><button id="legalDetailChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">📁 选择文件</button><button id="legalDetailUploadBtn" style="width: 100%; padding: 12px; background-color: #3F51B5; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">📤 上传法律明细</button><div id="legalDetailFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #3F51B5;"></div><div id="legalDetailStatus" style="margin-top: 10px; text-align: center; color: #666;"></div></div>'''
                     ui.html(upload_html_legal)
 
                 # 问责办台账
                 with ui.column().classes('w-1/2'):
                     ui.label('📊 法律问责办台账').classes('text-base font-bold')
 
-                    upload_html_acct = '''
-                    <div style="padding: 20px; border: 2px dashed #00BCD4; border-radius: 8px; background-color: #e0f2f1;">
-                        <input type="file" id="acctFile" accept=".xlsx,.xls" style="display: none;">
-                        <button id="acctChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
-                            📁 选择文件
-                        </button>
-                        <button id="acctUploadBtn" style="width: 100%; padding: 12px; background-color: #00BCD4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
-                            📤 上传问责办台账
-                        </button>
-                        <div id="acctFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #00BCD4;"></div>
-                        <div id="acctStatus" style="margin-top: 10px; text-align: center; color: #666;"></div>
-                    </div>
-                    '''
+                    upload_html_acct = '''<div style="padding: 20px; border: 2px dashed #00BCD4; border-radius: 8px; background-color: #e0f2f1;"><input type="file" id="acctFile" accept=".xlsx,.xls" style="display: none;"><button id="acctChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">📁 选择文件</button><button id="acctUploadBtn" style="width: 100%; padding: 12px; background-color: #00BCD4; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">📤 上传问责办台账</button><div id="acctFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #00BCD4;"></div><div id="acctStatus" style="margin-top: 10px; text-align: center; color: #666;"></div></div>'''
                     ui.html(upload_html_acct)
 
             with ui.row().classes('gap-4 mt-4'):
@@ -1442,43 +1418,17 @@ def main_page():
                 with ui.column().classes('w-1/2'):
                     ui.label('💰 人力风险金').classes('text-base font-bold')
 
-                    upload_html_risk = '''
-                    <div style="padding: 20px; border: 2px dashed #4CAF50; border-radius: 8px; background-color: #e8f5e9;">
-                        <input type="file" id="riskFundFile" accept=".xlsx,.xls" style="display: none;">
-                        <button id="riskFundChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
-                            📁 选择文件
-                        </button>
-                        <button id="riskFundUploadBtn" style="width: 100%; padding: 12px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
-                            📤 上传人力风险金
-                        </button>
-                        <div id="riskFundFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #4CAF50;"></div>
-                        <div id="riskFundStatus" style="margin-top: 10px; text-align: center; color: #666;"></div>
-                    </div>
-                    '''
+                    upload_html_risk = '''<div style="padding: 20px; border: 2px dashed #4CAF50; border-radius: 8px; background-color: #e8f5e9;"><input type="file" id="riskFundFile" accept=".xlsx,.xls" style="display: none;"><button id="riskFundChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">📁 选择文件</button><button id="riskFundUploadBtn" style="width: 100%; padding: 12px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">📤 上传人力风险金</button><div id="riskFundFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #4CAF50;"></div><div id="riskFundStatus" style="margin-top: 10px; text-align: center; color: #666;"></div></div>'''
                     ui.html(upload_html_risk)
 
                 # 风险金延伸
                 with ui.column().classes('w-1/2'):
                     ui.label('⚙️ 人力风险金延伸').classes('text-base font-bold')
 
-                    upload_html_risk_ext = '''
-                    <div style="padding: 20px; border: 2px dashed #9C27B0; border-radius: 8px; background-color: #f3e5f5;">
-                        <input type="file" id="riskExtFile" accept=".xlsx,.xls" style="display: none;">
-                        <button id="riskExtChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">
-                            📁 选择文件
-                        </button>
-                        <button id="riskExtUploadBtn" style="width: 100%; padding: 12px; background-color: #9C27B0; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">
-                            📤 上传风险金延伸
-                        </button>
-                        <div id="riskExtFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #9C27B0;"></div>
-                        <div id="riskExtStatus" style="margin-top: 10px; text-align: center; color: #666;"></div>
-                    </div>
-                    '''
+                    upload_html_risk_ext = '''<div style="padding: 20px; border: 2px dashed #9C27B0; border-radius: 8px; background-color: #f3e5f5;"><input type="file" id="riskExtFile" accept=".xlsx,.xls" style="display: none;"><button id="riskExtChooseBtn" style="width: 100%; padding: 12px; background-color: #FF9800; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-bottom: 10px;">📁 选择文件</button><button id="riskExtUploadBtn" style="width: 100%; padding: 12px; background-color: #9C27B0; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold;">📤 上传风险金延伸</button><div id="riskExtFileName" style="margin-top: 10px; text-align: center; font-weight: bold; color: #9C27B0;"></div><div id="riskExtStatus" style="margin-top: 10px; text-align: center; color: #666;"></div></div>'''
                     ui.html(upload_html_risk_ext)
 
-            # JavaScript 处理 - 完全参考 Tab 1 的模式
             ui.run_javascript('''
-                // ===== legalDetail 上传 =====
                 const legalDetailFile = document.getElementById('legalDetailFile');
                 const legalDetailChooseBtn = document.getElementById('legalDetailChooseBtn');
                 const legalDetailUploadBtn = document.getElementById('legalDetailUploadBtn');
@@ -1499,20 +1449,13 @@ def main_page():
                         legalDetailStatus.style.color = 'red';
                         return;
                     }
-
                     legalDetailStatus.textContent = '📥 上传中...';
                     legalDetailStatus.style.color = '#666';
                     legalDetailUploadBtn.disabled = true;
-
                     const formData = new FormData();
                     formData.append('file', file);
-
                     try {
-                        const response = await fetch('/upload_legal_economic_detail', {
-                            method: 'POST',
-                            body: formData
-                        });
-
+                        const response = await fetch('/upload_legal_economic_detail', {method: 'POST', body: formData});
                         const data = await response.json();
                         if (data.success) {
                             legalDetailStatus.textContent = '✅ ' + data.message;
@@ -1533,7 +1476,6 @@ def main_page():
                     }
                 });
 
-                // ===== acct 上传 =====
                 const acctFile = document.getElementById('acctFile');
                 const acctChooseBtn = document.getElementById('acctChooseBtn');
                 const acctUploadBtn = document.getElementById('acctUploadBtn');
@@ -1554,20 +1496,13 @@ def main_page():
                         acctStatus.style.color = 'red';
                         return;
                     }
-
                     acctStatus.textContent = '📥 上传中...';
                     acctStatus.style.color = '#666';
                     acctUploadBtn.disabled = true;
-
                     const formData = new FormData();
                     formData.append('file', file);
-
                     try {
-                        const response = await fetch('/upload_legal_accountability', {
-                            method: 'POST',
-                            body: formData
-                        });
-
+                        const response = await fetch('/upload_legal_accountability', {method: 'POST', body: formData});
                         const data = await response.json();
                         if (data.success) {
                             acctStatus.textContent = '✅ ' + data.message;
@@ -1588,7 +1523,6 @@ def main_page():
                     }
                 });
 
-                // ===== riskFund 上传 =====
                 const riskFundFile = document.getElementById('riskFundFile');
                 const riskFundChooseBtn = document.getElementById('riskFundChooseBtn');
                 const riskFundUploadBtn = document.getElementById('riskFundUploadBtn');
@@ -1609,20 +1543,13 @@ def main_page():
                         riskFundStatus.style.color = 'red';
                         return;
                     }
-
                     riskFundStatus.textContent = '📥 上传中...';
                     riskFundStatus.style.color = '#666';
                     riskFundUploadBtn.disabled = true;
-
                     const formData = new FormData();
                     formData.append('file', file);
-
                     try {
-                        const response = await fetch('/upload_hr_risk_fund', {
-                            method: 'POST',
-                            body: formData
-                        });
-
+                        const response = await fetch('/upload_hr_risk_fund', {method: 'POST', body: formData});
                         const data = await response.json();
                         if (data.success) {
                             riskFundStatus.textContent = '✅ ' + data.message;
@@ -1643,7 +1570,6 @@ def main_page():
                     }
                 });
 
-                // ===== riskExt 上传 =====
                 const riskExtFile = document.getElementById('riskExtFile');
                 const riskExtChooseBtn = document.getElementById('riskExtChooseBtn');
                 const riskExtUploadBtn = document.getElementById('riskExtUploadBtn');
@@ -1664,20 +1590,13 @@ def main_page():
                         riskExtStatus.style.color = 'red';
                         return;
                     }
-
                     riskExtStatus.textContent = '📥 上传中...';
                     riskExtStatus.style.color = '#666';
                     riskExtUploadBtn.disabled = true;
-
                     const formData = new FormData();
                     formData.append('file', file);
-
                     try {
-                        const response = await fetch('/upload_hr_risk_fund_extended', {
-                            method: 'POST',
-                            body: formData
-                        });
-
+                        const response = await fetch('/upload_hr_risk_fund_extended', {method: 'POST', body: formData});
                         const data = await response.json();
                         if (data.success) {
                             riskExtStatus.textContent = '✅ ' + data.message;
