@@ -1476,93 +1476,228 @@ def main_page():
                     '''
                     ui.html(upload_html_risk_ext)
 
-            def init_uploaders():
-                ui.run_javascript('''
-    
-                function createUploader(prefix, apiUrl) {
-    
-                    const file = document.getElementById(prefix + "File");
-                    const chooseBtn = document.getElementById(prefix + "ChooseBtn");
-                    const uploadBtn = document.getElementById(prefix + "UploadBtn");
-                    const fileName = document.getElementById(prefix + "FileName");
-                    const status = document.getElementById(prefix + "Status");
-    
-                    if (!file) return;
-    
-                    chooseBtn.onclick = () => file.click();
-    
-                    file.onchange = function () {
-                        if (this.files[0]) {
-                            fileName.textContent = '✅ 已选择: ' + this.files[0].name;
-                        }
-                    };
-    
-                    uploadBtn.onclick = async function () {
-    
-                        const selected = file.files[0];
-    
-                        if (!selected) {
-                            status.textContent = '❌ 请先选择文件';
-                            status.style.color = 'red';
-                            return;
-                        }
-    
-                        status.textContent = '📥 上传中...';
-                        status.style.color = '#666';
-                        uploadBtn.disabled = true;
-    
-                        const formData = new FormData();
-                        formData.append('file', selected);
-    
-                        try {
-    
-                            const response = await fetch(apiUrl, {
-                                method: 'POST',
-                                body: formData
-                            });
-    
-                            const data = await response.json();
-    
-                            if (data.success) {
-    
-                                status.textContent = '✅ ' + data.message;
-                                status.style.color = 'green';
-    
-                                fileName.textContent = '';
-                                file.value = '';
-    
-                                uploadBtn.disabled = false;
-    
-                                setTimeout(() => location.reload(), 2000);
-    
-                            } else {
-    
-                                status.textContent = '❌ ' + data.message;
-                                status.style.color = 'red';
-                                uploadBtn.disabled = false;
-    
-                            }
-    
-                        } catch (error) {
-    
-                            status.textContent = '❌ 上传失败: ' + error.message;
-                            status.style.color = 'red';
-                            uploadBtn.disabled = false;
-    
-                        }
-    
-                    };
-    
-                }
-    
-                createUploader("legalDetail", "/upload_legal_economic_detail");
-                createUploader("acct", "/upload_legal_accountability");
-                createUploader("riskFund", "/upload_hr_risk_fund");
-                createUploader("riskExt", "/upload_hr_risk_fund_extended");
-    
-                ''')
+            # JavaScript 处理 - 完全参考 Tab 1 的模式
+            ui.run_javascript('''
+                // ===== legalDetail 上传 =====
+                const legalDetailFile = document.getElementById('legalDetailFile');
+                const legalDetailChooseBtn = document.getElementById('legalDetailChooseBtn');
+                const legalDetailUploadBtn = document.getElementById('legalDetailUploadBtn');
+                const legalDetailFileName = document.getElementById('legalDetailFileName');
+                const legalDetailStatus = document.getElementById('legalDetailStatus');
 
-            ui.timer(0.1, init_uploaders, once=True)  # 0.1秒后执行一次
+                legalDetailChooseBtn.addEventListener('click', () => legalDetailFile.click());
+                legalDetailFile.addEventListener('change', function() {
+                    if (this.files[0]) {
+                        legalDetailFileName.textContent = '✅ 已选择: ' + this.files[0].name;
+                    }
+                });
+
+                legalDetailUploadBtn.addEventListener('click', async function() {
+                    const file = legalDetailFile.files[0];
+                    if (!file) {
+                        legalDetailStatus.textContent = '❌ 请先选择文件';
+                        legalDetailStatus.style.color = 'red';
+                        return;
+                    }
+
+                    legalDetailStatus.textContent = '📥 上传中...';
+                    legalDetailStatus.style.color = '#666';
+                    legalDetailUploadBtn.disabled = true;
+
+                    const formData = new FormData();
+                    formData.append('file', file);
+
+                    try {
+                        const response = await fetch('/upload_legal_economic_detail', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        const data = await response.json();
+                        if (data.success) {
+                            legalDetailStatus.textContent = '✅ ' + data.message;
+                            legalDetailStatus.style.color = 'green';
+                            legalDetailFileName.textContent = '';
+                            legalDetailFile.value = '';
+                            legalDetailUploadBtn.disabled = false;
+                            setTimeout(() => location.reload(), 2000);
+                        } else {
+                            legalDetailStatus.textContent = '❌ ' + data.message;
+                            legalDetailStatus.style.color = 'red';
+                            legalDetailUploadBtn.disabled = false;
+                        }
+                    } catch (error) {
+                        legalDetailStatus.textContent = '❌ 上传失败: ' + error.message;
+                        legalDetailStatus.style.color = 'red';
+                        legalDetailUploadBtn.disabled = false;
+                    }
+                });
+
+                // ===== acct 上传 =====
+                const acctFile = document.getElementById('acctFile');
+                const acctChooseBtn = document.getElementById('acctChooseBtn');
+                const acctUploadBtn = document.getElementById('acctUploadBtn');
+                const acctFileName = document.getElementById('acctFileName');
+                const acctStatus = document.getElementById('acctStatus');
+
+                acctChooseBtn.addEventListener('click', () => acctFile.click());
+                acctFile.addEventListener('change', function() {
+                    if (this.files[0]) {
+                        acctFileName.textContent = '✅ 已选择: ' + this.files[0].name;
+                    }
+                });
+
+                acctUploadBtn.addEventListener('click', async function() {
+                    const file = acctFile.files[0];
+                    if (!file) {
+                        acctStatus.textContent = '❌ 请先选择文件';
+                        acctStatus.style.color = 'red';
+                        return;
+                    }
+
+                    acctStatus.textContent = '📥 上传中...';
+                    acctStatus.style.color = '#666';
+                    acctUploadBtn.disabled = true;
+
+                    const formData = new FormData();
+                    formData.append('file', file);
+
+                    try {
+                        const response = await fetch('/upload_legal_accountability', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        const data = await response.json();
+                        if (data.success) {
+                            acctStatus.textContent = '✅ ' + data.message;
+                            acctStatus.style.color = 'green';
+                            acctFileName.textContent = '';
+                            acctFile.value = '';
+                            acctUploadBtn.disabled = false;
+                            setTimeout(() => location.reload(), 2000);
+                        } else {
+                            acctStatus.textContent = '❌ ' + data.message;
+                            acctStatus.style.color = 'red';
+                            acctUploadBtn.disabled = false;
+                        }
+                    } catch (error) {
+                        acctStatus.textContent = '❌ 上传失败: ' + error.message;
+                        acctStatus.style.color = 'red';
+                        acctUploadBtn.disabled = false;
+                    }
+                });
+
+                // ===== riskFund 上传 =====
+                const riskFundFile = document.getElementById('riskFundFile');
+                const riskFundChooseBtn = document.getElementById('riskFundChooseBtn');
+                const riskFundUploadBtn = document.getElementById('riskFundUploadBtn');
+                const riskFundFileName = document.getElementById('riskFundFileName');
+                const riskFundStatus = document.getElementById('riskFundStatus');
+
+                riskFundChooseBtn.addEventListener('click', () => riskFundFile.click());
+                riskFundFile.addEventListener('change', function() {
+                    if (this.files[0]) {
+                        riskFundFileName.textContent = '✅ 已选择: ' + this.files[0].name;
+                    }
+                });
+
+                riskFundUploadBtn.addEventListener('click', async function() {
+                    const file = riskFundFile.files[0];
+                    if (!file) {
+                        riskFundStatus.textContent = '❌ 请先选择文件';
+                        riskFundStatus.style.color = 'red';
+                        return;
+                    }
+
+                    riskFundStatus.textContent = '📥 上传中...';
+                    riskFundStatus.style.color = '#666';
+                    riskFundUploadBtn.disabled = true;
+
+                    const formData = new FormData();
+                    formData.append('file', file);
+
+                    try {
+                        const response = await fetch('/upload_hr_risk_fund', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        const data = await response.json();
+                        if (data.success) {
+                            riskFundStatus.textContent = '✅ ' + data.message;
+                            riskFundStatus.style.color = 'green';
+                            riskFundFileName.textContent = '';
+                            riskFundFile.value = '';
+                            riskFundUploadBtn.disabled = false;
+                            setTimeout(() => location.reload(), 2000);
+                        } else {
+                            riskFundStatus.textContent = '❌ ' + data.message;
+                            riskFundStatus.style.color = 'red';
+                            riskFundUploadBtn.disabled = false;
+                        }
+                    } catch (error) {
+                        riskFundStatus.textContent = '❌ 上传失败: ' + error.message;
+                        riskFundStatus.style.color = 'red';
+                        riskFundUploadBtn.disabled = false;
+                    }
+                });
+
+                // ===== riskExt 上传 =====
+                const riskExtFile = document.getElementById('riskExtFile');
+                const riskExtChooseBtn = document.getElementById('riskExtChooseBtn');
+                const riskExtUploadBtn = document.getElementById('riskExtUploadBtn');
+                const riskExtFileName = document.getElementById('riskExtFileName');
+                const riskExtStatus = document.getElementById('riskExtStatus');
+
+                riskExtChooseBtn.addEventListener('click', () => riskExtFile.click());
+                riskExtFile.addEventListener('change', function() {
+                    if (this.files[0]) {
+                        riskExtFileName.textContent = '✅ 已选择: ' + this.files[0].name;
+                    }
+                });
+
+                riskExtUploadBtn.addEventListener('click', async function() {
+                    const file = riskExtFile.files[0];
+                    if (!file) {
+                        riskExtStatus.textContent = '❌ 请先选择文件';
+                        riskExtStatus.style.color = 'red';
+                        return;
+                    }
+
+                    riskExtStatus.textContent = '📥 上传中...';
+                    riskExtStatus.style.color = '#666';
+                    riskExtUploadBtn.disabled = true;
+
+                    const formData = new FormData();
+                    formData.append('file', file);
+
+                    try {
+                        const response = await fetch('/upload_hr_risk_fund_extended', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        const data = await response.json();
+                        if (data.success) {
+                            riskExtStatus.textContent = '✅ ' + data.message;
+                            riskExtStatus.style.color = 'green';
+                            riskExtFileName.textContent = '';
+                            riskExtFile.value = '';
+                            riskExtUploadBtn.disabled = false;
+                            setTimeout(() => location.reload(), 2000);
+                        } else {
+                            riskExtStatus.textContent = '❌ ' + data.message;
+                            riskExtStatus.style.color = 'red';
+                            riskExtUploadBtn.disabled = false;
+                        }
+                    } catch (error) {
+                        riskExtStatus.textContent = '❌ 上传失败: ' + error.message;
+                        riskExtStatus.style.color = 'red';
+                        riskExtUploadBtn.disabled = false;
+                    }
+                });
+            ''')
 
         # ========== Tab 5: 全量导出 ==========
         with ui.tab_panel('tab5'):
