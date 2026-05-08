@@ -290,8 +290,6 @@ if __name__ == "__main__":
 
     app.config["PORT"] = get_free_port()
 
-
-
     # =========================
     # ⭐ 等待 Flask 真正可访问（改进版）
     # =========================
@@ -313,13 +311,10 @@ if __name__ == "__main__":
                     print(f"   等待中... ({attempt}0ms)")
                 time.sleep(0.1)
 
-        # 打开浏览器
+        # 打开浏览器（只打开一次）
         print("🌐 打开浏览器中...\n")
         try:
             webbrowser.open(f"http://127.0.0.1:{port}", new=1)
-            time.sleep(1)
-            # 再激活一次，确保窗口在前台
-            webbrowser.open(f"http://127.0.0.1:{port}", new=0)
         except Exception as e:
             print(f"❌ 浏览器打开失败: {e}\n")
             print(f"请手动打开: http://127.0.0.1:{port}\n")
