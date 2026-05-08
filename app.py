@@ -147,10 +147,16 @@ def start_picker_route():
 
 
 # =========================
-# 保存 XPath
+# 保存 XPath（已启用去重）
 # =========================
-@app.route("/save_xpath", methods=["POST"])
+@app.route("/save_xpath", methods=["POST", "OPTIONS"])
 def save_xpath():
+
+    # 处理 CORS 预检请求
+    if request.method == "OPTIONS":
+        return {
+            "status": "ok"
+        }
 
     data = request.get_json()
 
@@ -161,6 +167,25 @@ def save_xpath():
 
         xpath_store["steps"] = []
 
+    # ⭐ 去重检查：防止保存重复步骤
+    current_xpath = data.get("xpath", "")
+    current_action = data.get("action", "")
+    current_name = data.get("name", "")
+    current_index = data.get("index", 0)
+    
+    # 检查是否与最后一个步骤重复
+    if xpath_store["steps"]:
+        last_step = xpath_store["steps"][-1]
+        if (last_step.get("xpath") == current_xpath and
+            last_step.get("action") == current_action and
+            last_step.get("name") == current_name):
+            print(f"⚠️  [后端去重] 忽略重复的步骤: {current_name}")
+            return {
+                "status": "ok",
+                "duplicated": True,
+                "message": "步骤重复，已忽略"
+            }
+
     # 添加step
     xpath_store["steps"].append(data)
 
@@ -168,8 +193,11 @@ def save_xpath():
         key=lambda x: x.get("index", 0)
     )
 
+    print(f"✅ 步骤已保存 (共 {len(xpath_store['steps'])} 个)")
+
     return {
-        "status": "ok"
+        "status": "ok",
+        "duplicated": False
     }
 
 # =========================
@@ -179,6 +207,24 @@ def save_xpath():
 def get_xpath():
 
     return jsonify(xpath_store)
+
+
+# =========================
+# 清除录制结果（支持重新录制）
+# =========================
+@app.route("/clear_xpath", methods=["POST"])
+def clear_xpath():
+    global xpath_store
+    
+    count = len(xpath_store.get("steps", []))
+    xpath_store = {}
+    
+    print(f"✅ 已清除 {count} 个步骤，可以重新开始录制")
+    
+    return {
+        "status": "ok",
+        "cleared_count": count
+    }
 
 
 # =========================
