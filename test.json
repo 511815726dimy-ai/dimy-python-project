@@ -1,0 +1,827 @@
+{
+  "name": "test",
+  "login_url": "http://10.9.0.152:8020/pshare/web/portal/check/BIPlatform",
+  "download_path": "downloads",
+  "steps": [
+    {
+      "action": "input",
+      "iframe": "",
+      "index": 1,
+      "name": "loginname",
+      "page_index": 0,
+      "url": "http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299",
+      "value": "",
+      "xpath": "//*[@id=\"loginName\"]"
+    },
+    {
+      "action": "input",
+      "iframe": "",
+      "index": 2,
+      "name": "secVoucher",
+      "page_index": 0,
+      "url": "http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299",
+      "value": "",
+      "xpath": "//*[@id=\"secVoucher\"]"
+    },
+    {
+      "action": "input",
+      "iframe": "",
+      "index": 3,
+      "name": "secVoucher",
+      "page_index": 0,
+      "url": "http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299",
+      "value": "",
+      "xpath": "//*[@id=\"secVoucher\"]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 4,
+      "name": "logininput",
+      "page_index": 0,
+      "url": "http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299",
+      "value": "",
+      "xpath": "//*[@id=\"logininput\"]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 5,
+      "name": "logininput",
+      "page_index": 0,
+      "url": "http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299",
+      "value": "",
+      "xpath": "//*[@id=\"logininput\"]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 6,
+      "name": "logininput",
+      "page_index": 0,
+      "url": "http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299",
+      "value": "",
+      "xpath": "//*[@id=\"logininput\"]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 7,
+      "name": "logininput",
+      "page_index": 0,
+      "url": "http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299",
+      "value": "",
+      "xpath": "//*[@id=\"logininput\"]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 8,
+      "name": "产品运营项目",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/h4[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 9,
+      "name": "05. 产品运营",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[1]/div[1]/h4[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 10,
+      "name": "05. 产品运营",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[1]/div[1]/h4[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 11,
+      "name": "杭州分行",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[1]/div[1]/h4[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 12,
+      "name": "杭州分行",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[1]/div[1]/h4[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 13,
+      "name": "杭州分行",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[1]/div[1]/h4[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 14,
+      "name": "信审流程汇总",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[2]/ul[1]/li[5]/h4[1]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 15,
+      "name": "信审流程汇总",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[2]/ul[1]/li[5]/h4[1]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 16,
+      "name": "信审流程汇总",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[2]/ul[1]/li[5]/h4[1]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 17,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 18,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 19,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 20,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 21,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 22,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 23,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 24,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 25,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 26,
+      "name": "导出",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "//*[@id=\"app\"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 27,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 28,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 29,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 30,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 31,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 32,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 33,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 34,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 35,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 36,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 37,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 38,
+      "name": "导出全部页面",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 39,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 40,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 41,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 42,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 43,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 44,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 45,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 46,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 47,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 48,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 49,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 50,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 51,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 52,
+      "name": "导出Excel",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 53,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 54,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 55,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 56,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 57,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 58,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 59,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 60,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 61,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 62,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 63,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 64,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 65,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 66,
+      "name": "导出全部图表",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 67,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 68,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 69,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 70,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 71,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 72,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 73,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 74,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 75,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 76,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 77,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 78,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 79,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 80,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 81,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    },
+    {
+      "action": "click",
+      "iframe": "",
+      "index": 82,
+      "name": "确定",
+      "page_index": 0,
+      "url": "http://www.bi.hfbank/dash/folder/63?rid=47771",
+      "value": "",
+      "xpath": "/html/body/div[24]/div[1]/div[1]/div[3]/button[1]"
+    }
+  ]
+}

@@ -1,0 +1,314 @@
+
+? 等待 Flask 启动完成...
+======================================================================
+
+?? RPA 任务管理系统启动中...
+======================================================================
+
+ * Serving Flask app 'app'
+ * Debug mode: off
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:53139
+Press CTRL+C to quit
+   等待中... (00ms)
+? Flask 已准备就绪 (第 2 次尝试)
+?? 打开浏览器中...
+
+127.0.0.1 - - [08/May/2026 10:32:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:32:50] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [08/May/2026 10:32:51] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:32:57] "GET /create HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:14] "GET /start_picker?url=http://10.9.0.152:8020/pshare/web/portal/check/BIPlatform HTTP/1.1" 200 -
+
+======================================================================
+?? 启动 RPA 录制器
+======================================================================
+
+? 初始页面脚本已注入
+
+?? 监听页面跳转中...
+
+127.0.0.1 - - [08/May/2026 10:33:22] "OPTIONS /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 1, 'page_index': 0, 'name': 'loginname', 'action': 'input', 'xpath': '//*[@id="loginName"]', 'iframe': '', 'value': '', 'url': 'http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299'}
+127.0.0.1 - - [08/May/2026 10:33:22] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 2, 'page_index': 0, 'name': 'secVoucher', 'action': 'input', 'xpath': '//*[@id="secVoucher"]', 'iframe': '', 'value': '', 'url': 'http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299'}
+127.0.0.1 - - [08/May/2026 10:33:26] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 3, 'page_index': 0, 'name': 'secVoucher', 'action': 'input', 'xpath': '//*[@id="secVoucher"]', 'iframe': '', 'value': '', 'url': 'http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299'}
+127.0.0.1 - - [08/May/2026 10:33:26] "POST /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:32] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:32] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:32] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:32] "OPTIONS /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 4, 'page_index': 0, 'name': 'logininput', 'action': 'click', 'xpath': '//*[@id="logininput"]', 'iframe': '', 'value': '', 'url': 'http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299'}
+127.0.0.1 - - [08/May/2026 10:33:32] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 5, 'page_index': 0, 'name': 'logininput', 'action': 'click', 'xpath': '//*[@id="logininput"]', 'iframe': '', 'value': '', 'url': 'http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299'}
+127.0.0.1 - - [08/May/2026 10:33:32] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 6, 'page_index': 0, 'name': 'logininput', 'action': 'click', 'xpath': '//*[@id="logininput"]', 'iframe': '', 'value': '', 'url': 'http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299'}
+127.0.0.1 - - [08/May/2026 10:33:32] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 7, 'page_index': 0, 'name': 'logininput', 'action': 'click', 'xpath': '//*[@id="logininput"]', 'iframe': '', 'value': '', 'url': 'http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299'}
+127.0.0.1 - - [08/May/2026 10:33:32] "POST /save_xpath HTTP/1.1" 200 -
+
+?? 检测到页面跳转: http://web.uass1.hfbank:9016/uass-core/loginpage.do;jsessionid1=vasFbqbfbETAAls708wj0T_48ehbfPUEQfTykI3RYrwk6zViO8Xw!1156667236?url=http%3A%2F%2Fwww.bi.hfbank%2Fhsbi%2Flogin%26P%3DPAPP%7C07%7C19D9DF9FD4869A5D896B709E43E28299 → http://www.bi.hfbank/dash/folder/63
+? 新页面脚本已注入 (第 2 次)
+? 页面标记: page_index++
+? 脚本注入失败: Message: javascript error: Unexpected token '.'
+  (Session info: chrome=146.0.7680.72)
+Stacktrace:
+        chromedriver!GetHandleVerifier [0x7ff64ad59895+14bb5]
+        chromedriver!GetHandleVerifier [0x7ff64ad59900+14c20]
+        chromedriver!(No symbol) [0x7ff64aadd93d]
+        chromedriver!(No symbol) [0x7ff64aae58b1]
+        chromedriver!(No symbol) [0x7ff64aae8d6f]
+        chromedriver!(No symbol) [0x7ff64ab857dd]
+        chromedriver!(No symbol) [0x7ff64ab6079a]
+        chromedriver!(No symbol) [0x7ff64ab843c8]
+        chromedriver!(No symbol) [0x7ff64ab29a0c]
+        chromedriver!(No symbol) [0x7ff64ab2a953]
+        chromedriver!GetHandleVerifier [0x7ff64b06dd7d+32909d]
+        chromedriver!GetHandleVerifier [0x7ff64b06845d+32377d]
+        chromedriver!GetHandleVerifier [0x7ff64b08a53a+34585a]
+        chromedriver!GetHandleVerifier [0x7ff64ad75e75+31195]
+        chromedriver!GetHandleVerifier [0x7ff64ad7ec1c+39f3c]
+        chromedriver!GetHandleVerifier [0x7ff64ad62ea4+1e1c4]
+        chromedriver!GetHandleVerifier [0x7ff64ad63056+1e376]
+        chromedriver!GetHandleVerifier [0x7ff64ad478b7+2bd7]
+        KERNEL32!BaseThreadInitThunk [0x7ffef84c4034+14]
+        ntdll!RtlUserThreadStart [0x7ffefacd3691+21]
+
+127.0.0.1 - - [08/May/2026 10:33:41] "OPTIONS /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 8, 'page_index': 0, 'name': '产品运营项目', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/h4[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:41] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 9, 'page_index': 0, 'name': '05. 产品运营', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[1]/div[1]/h4[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:45] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 10, 'page_index': 0, 'name': '05. 产品运营', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[1]/div[1]/h4[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:45] "POST /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:47] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:47] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:33:47] "OPTIONS /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 11, 'page_index': 0, 'name': '杭州分行', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[1]/div[1]/h4[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:47] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 12, 'page_index': 0, 'name': '杭州分行', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[1]/div[1]/h4[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:47] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 13, 'page_index': 0, 'name': '杭州分行', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[1]/div[1]/h4[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:47] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 14, 'page_index': 0, 'name': '信审流程汇总', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[2]/ul[1]/li[5]/h4[1]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:48] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 15, 'page_index': 0, 'name': '信审流程汇总', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[2]/ul[1]/li[5]/h4[1]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:48] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 16, 'page_index': 0, 'name': '信审流程汇总', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[2]/div[3]/div[2]/div[6]/div[2]/div[3]/div[2]/ul[1]/li[5]/h4[1]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63'}
+127.0.0.1 - - [08/May/2026 10:33:48] "POST /save_xpath HTTP/1.1" 200 -
+
+?? 检测到页面跳转: http://www.bi.hfbank/dash/folder/63 → http://www.bi.hfbank/dash/folder/63?rid=47771
+? 新页面脚本已注入 (第 3 次)
+? 页面标记: page_index++
+? 脚本注入失败: Message: javascript error: Unexpected token '.'
+  (Session info: chrome=146.0.7680.72)
+Stacktrace:
+        chromedriver!GetHandleVerifier [0x7ff64ad59895+14bb5]
+        chromedriver!GetHandleVerifier [0x7ff64ad59900+14c20]
+        chromedriver!(No symbol) [0x7ff64aadd93d]
+        chromedriver!(No symbol) [0x7ff64aae58b1]
+        chromedriver!(No symbol) [0x7ff64aae8d6f]
+        chromedriver!(No symbol) [0x7ff64ab857dd]
+        chromedriver!(No symbol) [0x7ff64ab6079a]
+        chromedriver!(No symbol) [0x7ff64ab843c8]
+        chromedriver!(No symbol) [0x7ff64ab29a0c]
+        chromedriver!(No symbol) [0x7ff64ab2a953]
+        chromedriver!GetHandleVerifier [0x7ff64b06dd7d+32909d]
+        chromedriver!GetHandleVerifier [0x7ff64b06845d+32377d]
+        chromedriver!GetHandleVerifier [0x7ff64b08a53a+34585a]
+        chromedriver!GetHandleVerifier [0x7ff64ad75e75+31195]
+        chromedriver!GetHandleVerifier [0x7ff64ad7ec1c+39f3c]
+        chromedriver!GetHandleVerifier [0x7ff64ad62ea4+1e1c4]
+        chromedriver!GetHandleVerifier [0x7ff64ad63056+1e376]
+        chromedriver!GetHandleVerifier [0x7ff64ad478b7+2bd7]
+        KERNEL32!BaseThreadInitThunk [0x7ffef84c4034+14]
+        ntdll!RtlUserThreadStart [0x7ffefacd3691+21]
+
+127.0.0.1 - - [08/May/2026 10:34:01] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:34:01] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:34:01] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:34:01] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:34:01] "OPTIONS /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 17, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 22, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 18, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 19, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 23, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 24, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 25, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 26, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 20, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 21, 'page_index': 0, 'name': '导出', 'action': 'click', 'xpath': '//*[@id="app"]/div[1]/div[3]/div[1]/div[1]/div[1]/div[5]/span[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:01] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 27, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:03] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 28, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 29, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 30, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 31, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 32, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 33, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 34, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 35, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 36, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 38, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 37, 'page_index': 0, 'name': '导出全部页面', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:04] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 39, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 40, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 41, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 42, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 43, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 44, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 45, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 46, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 47, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 48, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 49, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 51, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 50, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 52, 'page_index': 0, 'name': '导出Excel', 'action': 'click', 'xpath': '/html/body/div[25]/div[1]/div[1]/ul[1]/li[2]/div[2]/ul[1]/li[1]/div[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:05] "POST /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:34:07] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:34:07] "OPTIONS /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:34:07] "OPTIONS /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 53, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 56, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 57, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 58, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 59, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 60, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 61, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 62, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 63, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 65, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 64, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 54, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 66, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 55, 'page_index': 0, 'name': '导出全部图表', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/div[1]/button[2]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:07] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 67, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 68, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 69, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 70, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 71, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 72, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 73, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 74, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 75, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 76, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 77, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 78, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 79, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 80, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 81, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+收到Step: {'index': 82, 'page_index': 0, 'name': '确定', 'action': 'click', 'xpath': '/html/body/div[24]/div[1]/div[1]/div[3]/button[1]', 'iframe': '', 'value': '', 'url': 'http://www.bi.hfbank/dash/folder/63?rid=47771'}
+127.0.0.1 - - [08/May/2026 10:34:08] "POST /save_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:35:27] "GET /get_xpath HTTP/1.1" 200 -
+127.0.0.1 - - [08/May/2026 10:35:50] "POST /create HTTP/1.1" 200 -
+??  异常: Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=146.0.7680.72); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+        chromedriver!GetHandleVerifier [0x7ff64ad59895+14bb5]
+        chromedriver!GetHandleVerifier [0x7ff64ad59900+14c20]
+        chromedriver!(No symbol) [0x7ff64aadd93d]
+        chromedriver!(No symbol) [0x7ff64aac8a92]
+        chromedriver!(No symbol) [0x7ff64aaef25c]
+        chromedriver!(No symbol) [0x7ff64ab678e0]
+        chromedriver!(No symbol) [0x7ff64ab83c92]
+        chromedriver!(No symbol) [0x7ff64ab29a0c]
+        chromedriver!(No symbol) [0x7ff64ab2a953]
+        chromedriver!GetHandleVerifier [0x7ff64b06dd7d+32909d]
+        chromedriver!GetHandleVerifier [0x7ff64b06845d+32377d]
+        chromedriver!GetHandleVerifier [0x7ff64b08a53a+34585a]
+        chromedriver!GetHandleVerifier [0x7ff64ad75e75+31195]
+        chromedriver!GetHandleVerifier [0x7ff64ad7ec1c+39f3c]
+        chromedriver!GetHandleVerifier [0x7ff64ad62ea4+1e1c4]
+        chromedriver!GetHandleVerifier [0x7ff64ad63056+1e376]
+        chromedriver!GetHandleVerifier [0x7ff64ad478b7+2bd7]
+        KERNEL32!BaseThreadInitThunk [0x7ffef84c4034+14]
+        ntdll!RtlUserThreadStart [0x7ffefacd3691+21]
+
+??  异常: Message: invalid session id; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidsessionidexception
+Stacktrace:
+        chromedriver!GetHandleVerifier [0x7ff64ad59895+14bb5]
+        chromedriver!GetHandleVerifier [0x7ff64ad59900+14c20]
+        chromedriver!(No symbol) [0x7ff64aadd726]
+        chromedriver!(No symbol) [0x7ff64ab28a13]
+        chromedriver!(No symbol) [0x7ff64ab606a2]
+        chromedriver!(No symbol) [0x7ff64ab5a8f1]
+        chromedriver!(No symbol) [0x7ff64ab59b92]
+        chromedriver!(No symbol) [0x7ff64aaa6325]
+        chromedriver!GetHandleVerifier [0x7ff64b06dd7d+32909d]
+        chromedriver!GetHandleVerifier [0x7ff64b06845d+32377d]
+        chromedriver!GetHandleVerifier [0x7ff64b08a53a+34585a]
+        chromedriver!GetHandleVerifier [0x7ff64ad75e75+31195]
+        chromedriver!GetHandleVerifier [0x7ff64ad7ec1c+39f3c]
+        chromedriver!(No symbol) [0x7ff64aaa50ea]
+        chromedriver!GetHandleVerifier [0x7ff64b1d6cc8+491fe8]
+        KERNEL32!BaseThreadInitThunk [0x7ffef84c4034+14]
+        ntdll!RtlUserThreadStart [0x7ffefacd3691+21]
+
+
