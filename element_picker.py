@@ -18,7 +18,7 @@ def get_driver_path():
 
 
 # =========================
-# Recorder JS（跨页面持久化版本）
+# Recorder JS（跨页面持久化版本 + 防抖）
 # =========================
 def get_recorder_js(port):
 
@@ -47,6 +47,34 @@ try {{
     }}
 }} catch (e) {{
     console.warn("恢复状态失败:", e);
+}}
+
+
+// =========================
+// ⭐ 防抖机制（防止快速重复点击）
+// =========================
+let lastEventTime = 0;
+let DEBOUNCE_DELAY = 400;  // 400ms内不录制重复操作
+
+function shouldDebounce() {{
+    let now = Date.now();
+    if (now - lastEventTime < DEBOUNCE_DELAY) {{
+        return true;
+    }}
+    lastEventTime = now;
+    return false;
+}}
+
+// 记录最后一次发送的步骤信息，用于去重
+let lastSentStep = null;
+
+function isSameAsLastStep(xpath, action, name) {{
+    if (!lastSentStep) return false;
+    return (
+        lastSentStep.xpath === xpath &&
+        lastSentStep.action === action &&
+        lastSentStep.name === name
+    );
 }}
 
 
@@ -129,6 +157,12 @@ function bind(win) {{
 
     win.document.addEventListener("mousedown", function(e) {{
 
+        // ⭐ 防抖检查：避免快速重复点击
+        if (shouldDebounce()) {{
+            console.warn(`⚠️  防抖: 忽略过于频繁的点击操作`);
+            return;
+        }}
+
         let el = e.target;
         if (!el) return;
 
@@ -155,12 +189,21 @@ function bind(win) {{
             el.id ||
             tag;
 
+        // ⭐ 防重复：检查是否与上一步相同
+        if (isSameAsLastStep(xpath, action, name)) {{
+            console.warn(`⚠️  去重: 忽略与上一步重复的操作 [${{name}}]`);
+            return;
+        }}
+
         el.style.outline = "3px solid red";
 
         window.__RPA_STEP_INDEX__++;
         saveState();
 
         console.log(`✅ 录制: [${{window.__RPA_PAGE_INDEX__}}页-步${{window.__RPA_STEP_INDEX__}}] ${{name}}`);
+
+        // 记录本次步骤
+        lastSentStep = {{ xpath, action, name }};
 
         fetch("http://127.0.0.1:{port}/save_xpath", {{
             method: "POST",
@@ -213,7 +256,7 @@ function keepAlive() {{
 bind(window);
 keepAlive();
 
-console.log("✅ RPA Recorder 已启动");
+console.log("✅ RPA Recorder 已启动（已启用防抖机制）");
 
 }})();
 """
